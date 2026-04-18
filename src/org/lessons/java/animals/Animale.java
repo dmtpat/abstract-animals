@@ -5,7 +5,7 @@ public abstract class Animale {
     private String nome;
     private String genere;
 
-    protected void Animals(String nome, String genere){
+    protected Animale(String nome, String genere){
         this.nome = nome;
         this.genere = genere;
     }
