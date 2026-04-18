@@ -4,10 +4,14 @@ public abstract class Animale {
 
     private String nome;
     private String genere;
+    private float peso;
+    private String colore;
 
-    protected Animale(String nome, String genere){
+    protected Animale(String nome, String genere, float peso, String colore){
         this.nome = nome;
         this.genere = genere;
+        this.peso = peso;
+        this.colore = colore;
     }
 
     protected String getNome() {
@@ -27,6 +31,26 @@ public abstract class Animale {
     protected void setGenere(String genere) {
         if (genere != null) {
             this.genere = genere;
+        }
+    }
+
+    protected float getPeso() {
+        return this.peso;
+    }
+
+    protected void setpeso(float peso) {
+        if (peso != 0) {
+            this.peso = peso;
+        }
+    }
+
+    protected String getColore() {
+        return this.colore;
+    }
+
+    protected void setColore(String colore) {
+        if (colore != null) {
+            this.colore = colore;
         }
     }
 
