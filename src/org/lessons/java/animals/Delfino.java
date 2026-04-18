@@ -1,0 +1,39 @@
+package org.lessons.java.animals;
+
+public class Delfino extends Animale{
+    private String razza;
+    private boolean isSaltyWater;
+
+    public Delfino(String nome, String genere, float peso, String colore, String razza, boolean isSaltyWater) {
+        super(nome, genere, peso, colore);
+        this.razza = razza;
+        this.isSaltyWater = isSaltyWater;
+    }
+    
+    public String getRazza() {
+        return this.razza;
+    }
+
+    public void setRazza(String razza) {
+        if (razza != null) {
+            this.razza = razza;
+        }
+    }
+
+    public boolean getIsSaltyWater() {
+        return this.isSaltyWater;
+    }
+
+    public void setIsSaltyWater(boolean isSaltyWater) {
+        this.isSaltyWater = isSaltyWater;
+    }
+
+    public void verso() {
+        System.out.println("iii iii!");
+    }
+
+    public void mangia() {
+        System.out.println("Mangia pesce e alghe");
+    }
+
+}
