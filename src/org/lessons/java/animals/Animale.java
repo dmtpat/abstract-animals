@@ -63,6 +63,7 @@ public abstract class Animale {
     public abstract void mangia();
     
     public String toString() {
+        //! %.2f serve per arotondare a 2 cifre decimali un float in fase di formattzione in stringa
         return String.format("L'animale si chiama %s è del genere %s, pesa %.2f Kg e il suo colore è %s. %n", this.nome, this.genere, this.peso, this.colore);
     }
 }
