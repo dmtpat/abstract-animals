@@ -39,12 +39,19 @@ public class Aquila extends Animale {
         this.hasNest = hasNest;
     }
 
-    public void verso(){
+    @Override
+    public void verso() {
         System.out.println("kiii-kiii!");
     }
 
-    public void mangia(){
+    @Override
+    public void mangia() {
         System.out.println("Mangia insetti, carne, cereali e verdura");
+    }
+    
+    @Override
+    public String toString() {
+        return super.toString() + String.format("Il passerotto ha una ampiezza alare di %.2f cm. Ha l'anello di riconoscimento: %b. Ha una nidiata: %b.", this.ampiezzaAlare, this.hasRing, this.hasNest);
     }
 
 }

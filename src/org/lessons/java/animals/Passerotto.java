@@ -29,11 +29,19 @@ public class Passerotto extends Animale {
         this.hasRing = hasRing;
     }
 
+    @Override
     public void verso(){
         System.out.println("Cip-Cip!");
     }
 
-    public void mangia(){
+    @Override
+    public void mangia() {
         System.out.println("Mangia insetti, cereali e verdura");
+
+    }
+    
+    @Override
+    public String toString() {
+        return super.toString() + String.format("Il passerotto ha una ampiezza alare di %.2f cm. Ha l'anello di riconoscimento: %b.", this.ampiezzaAlare, this.hasRing);
     }
 }

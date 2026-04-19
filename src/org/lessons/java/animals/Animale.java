@@ -59,5 +59,10 @@ public abstract class Animale {
     }
 
     public abstract void verso();
+
     public abstract void mangia();
+    
+    public String toString() {
+        return String.format("L'animale si chiama %s è del genere %s, pesa %.2f Kg e il suo colore è %s. %n", this.nome, this.genere, this.peso, this.colore);
+    }
 }

@@ -37,14 +37,20 @@ public class Cane extends Animale{
     public void setHasMicrochip(boolean hasMicrochip) {
         this.hasMicrochip = hasMicrochip;
     }
-    
-    public void verso(){
+
+    @Override
+    public void verso() {
         System.out.println("Bau-Bau!");
     }
-
-    public void mangia(){
+    
+    @Override
+    public void mangia() {
         System.out.println("Mangia carne e verdura");
     }
 
+    @Override
+    public String toString() {
+        return super.toString() + String.format("Il cane è di razza %s e di taglia %s. È presente il microchip: %b.", this.razza, this.taglia, this.hasMicrochip);
+    }
 
 }

@@ -28,12 +28,19 @@ public class Delfino extends Animale{
         this.isSaltyWater = isSaltyWater;
     }
 
+    @Override
     public void verso() {
         System.out.println("iii iii!");
     }
 
+    @Override
     public void mangia() {
         System.out.println("Mangia pesce e alghe");
+    }
+
+    @Override
+    public String toString() {
+        return super.toString() + String.format("Il delfino è di razza %s e vive in acqua salata: %b.", this.razza, this.isSaltyWater);
     }
 
 }
