@@ -1,6 +1,6 @@
 package org.lessons.java.animals;
 
-public class Delfino extends Animale{
+public class Delfino extends Animale implements Nuotante{
     private String razza;
     private boolean isSaltyWater;
 
@@ -40,7 +40,11 @@ public class Delfino extends Animale{
 
     @Override
     public String toString() {
-        return super.toString() + String.format("Il delfino è di razza %s e vive in acqua salata: %b.", this.razza, this.isSaltyWater);
+        return super.toString()
+                + String.format("Il delfino è di razza %s e vive in acqua salata: %b.", this.razza, this.isSaltyWater);
     }
 
+    public void nuota() {
+        System.out.println("Sto nuotando!!!");
+    }
 }

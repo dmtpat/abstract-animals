@@ -1,6 +1,6 @@
 package org.lessons.java.animals;
 
-public class Aquila extends Animale {
+public class Aquila extends Animale implements Volante {
     
     private float ampiezzaAlare;
     private boolean hasRing;
@@ -51,7 +51,12 @@ public class Aquila extends Animale {
     
     @Override
     public String toString() {
-        return super.toString() + String.format("Il passerotto ha una ampiezza alare di %.2f cm. Ha l'anello di riconoscimento: %b. Ha una nidiata: %b.", this.ampiezzaAlare, this.hasRing, this.hasNest);
+        return super.toString() + String.format(
+                "Il passerotto ha una ampiezza alare di %.2f cm. Ha l'anello di riconoscimento: %b. Ha una nidiata: %b.",
+                this.ampiezzaAlare, this.hasRing, this.hasNest);
     }
 
+     public void vola() {
+        System.out.println("Sto volando!!!");
+    }
 }
