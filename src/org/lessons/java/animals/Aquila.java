@@ -1,6 +1,6 @@
 package org.lessons.java.animals;
 
-public class Aquila extends Animale implements Volante {
+public class Aquila extends AbstractAnimale implements Volante {
     
     private float ampiezzaAlare;
     private boolean hasRing;

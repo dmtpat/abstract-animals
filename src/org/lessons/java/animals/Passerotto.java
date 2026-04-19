@@ -1,6 +1,6 @@
 package org.lessons.java.animals;
 
-public class Passerotto extends Animale implements Volante{
+public class Passerotto extends AbstractAnimale implements Volante{
 
     private float ampiezzaAlare;
     private boolean hasRing;

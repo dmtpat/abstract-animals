@@ -1,13 +1,13 @@
 package org.lessons.java.animals;
 
-public abstract class Animale {
+public abstract class AbstractAnimale {
 
     private String nome;
     private String genere;
     private float peso;
     private String colore;
 
-    protected Animale(String nome, String genere, float peso, String colore){
+    protected AbstractAnimale(String nome, String genere, float peso, String colore){
         this.nome = nome;
         this.genere = genere;
         this.peso = peso;

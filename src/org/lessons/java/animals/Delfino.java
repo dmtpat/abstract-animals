@@ -1,6 +1,6 @@
 package org.lessons.java.animals;
 
-public class Delfino extends Animale implements Nuotante{
+public class Delfino extends AbstractAnimale implements Nuotante{
     private String razza;
     private boolean isSaltyWater;
 
