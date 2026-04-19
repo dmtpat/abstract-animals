@@ -2,11 +2,11 @@ package org.lessons.java.animals;
 
 public class Main {
 
-    public static void faiNuotare(Nuotante Animale) {
+    public static void faiNuotare(INuotante Animale) {
         Animale.nuota();
     }
 
-    public static void faiVolare(Volante Animale) {
+    public static void faiVolare(IVolante Animale) {
         Animale.vola();
     }
 

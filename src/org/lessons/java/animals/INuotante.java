@@ -1,6 +1,6 @@
 package org.lessons.java.animals;
 
-public interface Nuotante {
+public interface INuotante {
 
     public abstract void nuota();
 
