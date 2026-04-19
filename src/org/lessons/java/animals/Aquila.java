@@ -56,6 +56,7 @@ public class Aquila extends AbstractAnimale implements IVolante {
                 this.ampiezzaAlare, this.hasRing, this.hasNest);
     }
 
+    @Override
      public void vola() {
         System.out.println("Sto volando!!!");
     }

@@ -47,7 +47,7 @@ public class Passerotto extends AbstractAnimale implements IVolante{
                         this.ampiezzaAlare, this.hasRing);
     }
     
-    
+    @Override
     public void vola() {
         System.out.println("Sto volando!!!");
     }

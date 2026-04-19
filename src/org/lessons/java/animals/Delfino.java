@@ -44,6 +44,7 @@ public class Delfino extends AbstractAnimale implements INuotante{
                 + String.format("Il delfino è di razza %s e vive in acqua salata: %b.", this.razza, this.isSaltyWater);
     }
 
+    @Override
     public void nuota() {
         System.out.println("Sto nuotando!!!");
     }
